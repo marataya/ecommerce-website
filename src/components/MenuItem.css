@@ -1,0 +1,79 @@
+.menu-item {
+  min-width: 30%;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #000;
+  margin: 0 7.5px 15px;
+}
+
+.menu-item.large {
+  height: 550px;
+}
+
+.menu-item .bg-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu-item::hover {
+  cursor: pointer;
+}
+
+.menu-item::hover .bg-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.content {
+  position: absolute;
+  height: 90px;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-display: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #000;
+  background-color: #fff;
+  opacity: .7;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #4a4a4a;
+}
+
+.subtitle {
+  font-weight: lighter;
+  font-size: 16px;
+}
+/*# sourceMappingURL=MenuItem.css.map */
