@@ -2,18 +2,20 @@ import React, { Component } from 'react';
 import Lifecycles from './Lifecycles';
 import './App.css';
 import { HomePage } from './HomePage';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import ShopPage from './ShopPage';
-
+import Header from './components/Header';
 
 class App extends Component {
 
   render() {
     return (
     <div className="App">
-      <h1>Header</h1>
-      <Route exact path='/' component={ HomePage }></Route>
-      <Route exact path='/shop' component={ ShopPage }></Route>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={ HomePage }></Route>
+        <Route exact path='/shop' component={ ShopPage }></Route>
+      </Switch>
       {/* <HomePage/> */}
     </div>
   );}
